@@ -37,14 +37,14 @@ else: #The integer could be negative
 # List SEQUENCE
 countries = ["USA", "UK", "Japan"]
 print(f"My sequence is a {type(countries)}")
-if countries == list or countries == tuple or countries == range:
-    print(f"My sequence of countries is a {type(countries)}")
+if type(countries) in (list, tuple, range):
+    print(f"My {type(countries)} consist of countries")
     if type(countries) is list:
         if len(countries) == 0:
-            print(f"The list consist of {len(countries)} countries")
+            print(f"The {type(countries)} consist of {len(countries)} countries")
         elif len(countries) == 1:
-            print(f"The list consist of {len(countries)} country")
+            print(f"The {type(countries)} consist of {len(countries)} country")
         elif len(countries) > 1:
-            print(f"The list consist of {len(countries)} countries") 
+            print(f"The {type(countries)} consist of {len(countries)} countries") 
 else:
     print("My sequence has the wrong type for this task")
