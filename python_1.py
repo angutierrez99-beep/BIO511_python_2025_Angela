@@ -35,17 +35,16 @@ else: #The integer could be negative
 
 #------------2.2.3 Type gate + nested classification------------#
 # List SEQUENCE
-countries = ['Brazil', 'Sweden', 'United Kingdom']
-
-if countries := [list or tup or range]:
+countries = ["USA", "UK", "Japan"]
+print(f"My sequence is a {type(countries)}")
+if countries == list or countries == tuple or countries == range:
     print(f"My sequence of countries is a {type(countries)}")
+    if type(countries) is list:
+        if len(countries) == 0:
+            print(f"The list consist of {len(countries)} countries")
+        elif len(countries) == 1:
+            print(f"The list consist of {len(countries)} country")
+        elif len(countries) > 1:
+            print(f"The list consist of {len(countries)} countries") 
 else:
     print("My sequence has the wrong type for this task")
-
-if type(countries) is list:
-    if len(countries) == 0:
-        print(f"The list consist of {len(countries)} countries")
-    elif len(countries) == 1:
-        print(f"The list consist of {len(countries)} country")
-    else:
-        print(f"The list consist of {len(countries)} countries") 
