@@ -47,8 +47,8 @@ def aggregate(seq, mode, threshold):
 print("Global result before function call:",result)
 
 ## Call and print each mode separately
-nums = [-10, -5, 0, 5, 10]
-limit = 6
+nums = [3, -1, 7, 2, 9, 0, 4]
+limit = 4
 print("Sum mode:", aggregate(nums, "sum", limit)) # -> 10
 print("Count mode:", aggregate(nums, "count", limit)) # -> 1
 print("Max mode:", aggregate(nums, "max", limit)) # -> 10
